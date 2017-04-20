@@ -1,3 +1,6 @@
+/** Server Main Include File */
+
+
 #ifndef _MAIN_H
 #define _MAIN_H
 
@@ -7,6 +10,8 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+
+#define BUFSIZE 1024
 
 
 /** C Standard Library Headers */
@@ -18,6 +23,11 @@
 
 /** Unix Headers */
 #include <unistd.h>
+
+
+/** Application Headers */
+#include "Utils.h"
+#include "TCPServerUtility.h"
 
 
 #endif // _MAIN_H
